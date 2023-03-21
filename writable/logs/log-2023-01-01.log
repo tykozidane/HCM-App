@@ -1,0 +1,18 @@
+CRITICAL - 2023-01-01 21:45:57 --> Illegal string offset 'masked'
+in VENDORPATH\tecnickcom\tcpdf\tcpdf.php on line 7216.
+ 1 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(7216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'masked\'', 'VENDORPATH\\tecnickcom\\tcpdf\\tcpdf.php', 7216, [...])
+ 2 APPPATH\Controllers\ExportPDF.php(659): TCPDF->Image('FCPATH\\assets\\img\\tandatangan\\kopsurat.png', 0, 0, 200, 40, 'png', 'http://www.tcpdf.org', 'ROOTPATH\\public', false, 150, 'ROOTPATH\\public', false, true, false, false, false, false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\ExportPDF->formsurat()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExportPDF))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 21:46:08 --> Illegal string offset 'masked'
+in VENDORPATH\tecnickcom\tcpdf\tcpdf.php on line 7216.
+ 1 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(7216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'masked\'', 'VENDORPATH\\tecnickcom\\tcpdf\\tcpdf.php', 7216, [...])
+ 2 APPPATH\Controllers\ExportPDF.php(659): TCPDF->Image('FCPATH\\assets\\img\\tandatangan\\kopsurat.png', 0, 0, 200, 40, 'png', 'http://www.tcpdf.org', 'ROOTPATH\\public', false, 150, 'ROOTPATH\\public', false, 1, false, false, false, false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\ExportPDF->formsurat()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExportPDF))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

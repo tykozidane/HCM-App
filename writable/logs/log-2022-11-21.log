@@ -1,0 +1,236 @@
+CRITICAL - 2022-11-21 09:21:44 --> Allowed fields must be specified for model: App\Models\Dataabsen
+in SYSTEMPATH\BaseModel.php on line 1159.
+ 1 SYSTEMPATH\BaseModel.php(1159): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Dataabsen')
+ 2 SYSTEMPATH\BaseModel.php(723): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\Dataabsen.php(25): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\EventController.php(119): App\Models\Dataabsen->insertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 09:23:45 --> Allowed fields must be specified for model: App\Models\Dataabsen
+in SYSTEMPATH\BaseModel.php on line 1159.
+ 1 SYSTEMPATH\BaseModel.php(1159): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Dataabsen')
+ 2 SYSTEMPATH\BaseModel.php(723): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\Dataabsen.php(25): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\EventController.php(119): App\Models\Dataabsen->insertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 09:29:27 --> Allowed fields must be specified for model: App\Models\Dataabsen
+in SYSTEMPATH\BaseModel.php on line 1159.
+ 1 SYSTEMPATH\BaseModel.php(1159): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Dataabsen')
+ 2 SYSTEMPATH\BaseModel.php(723): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\Dataabsen.php(25): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\EventController.php(119): App\Models\Dataabsen->insertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 09:33:42 --> Allowed fields must be specified for model: App\Models\Dataabsen
+in SYSTEMPATH\BaseModel.php on line 1159.
+ 1 SYSTEMPATH\BaseModel.php(1159): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Dataabsen')
+ 2 SYSTEMPATH\BaseModel.php(723): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\Dataabsen.php(25): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\EventController.php(119): App\Models\Dataabsen->insertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 09:39:50 --> The route for "dataevent/6371" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dataevent/6371')
+ 2 APPPATH\Controllers\EventController.php(120): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 00:26:38 --> Undefined variable: b
+in APPPATH\Controllers\Import.php on line 554.
+ 1 APPPATH\Controllers\Import.php(554): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: b', 'APPPATH\\Controllers\\Import.php', 554, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 00:27:29 --> Illegal string offset 'nama'
+in APPPATH\Views\detailwla.php on line 139.
+ 1 APPPATH\Views\detailwla.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama\'', 'APPPATH\\Views\\detailwla.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(557): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 00:47:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1597.
+ 1 SYSTEMPATH\BaseModel.php(1597): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(852): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Dataemployee.php(25): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Import.php(569): App\Models\Dataemployee->dataUpdate('211938', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->deletewla('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 00:50:14 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1597.
+ 1 SYSTEMPATH\BaseModel.php(1597): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(852): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Dataemployee.php(29): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Import.php(569): App\Models\Dataemployee->dataUpdate('211938', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->deletewla('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-21 20:29:08 --> mysqli_sql_exception: Unknown column 'last_update' in 'field list' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\Dataabsen.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\EventController.php(119): App\Models\Dataabsen->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->checkin('637')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-11-21 20:29:08 --> Unknown column 'last_update' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `absen` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`, `created_at`, `updated_at`) VALUES (\'000434637\', \'637\', \'000434\', \'\', \'\', \'20:29:08\', \'2022:11:21 20:29:08\', \'2022-11-21 20:29:08\', \'2022-11-21 20:29:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `absen` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`, `created_at`, `updated_at`) VALUES (\'000434637\', \'637\', \'000434\', \'\', \'\', \'20:29:08\', \'2022:11:21 20:29:08\', \'2022-11-21 20:29:08\', \'2022-11-21 20:29:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `absen` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`, `created_at`, `updated_at`) VALUES (\'000434637\', \'637\', \'000434\', \'\', \'\', \'20:29:08\', \'2022:11:21 20:29:08\', \'2022-11-21 20:29:08\', \'2022-11-21 20:29:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `absen` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`, `created_at`, `updated_at`) VALUES (:id_absen:, :id_event:, :nik:, :vote:, :notes:, :jam_checkin:, :last_update:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\Dataabsen.php(28): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\EventController.php(119): App\Models\Dataabsen->insertData([...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('637')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 20:50:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1597.
+ 1 SYSTEMPATH\BaseModel.php(1597): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(852): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Dataabsen.php(33): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\EventController.php(134): App\Models\Dataabsen->dataUpdate('637', '000434', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 20:57:27 --> Illegal string offset 'id_absen'
+in APPPATH\Controllers\EventController.php on line 137.
+ 1 APPPATH\Controllers\EventController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_absen\'', 'APPPATH\\Controllers\\EventController.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-21 20:57:51 --> mysqli_sql_exception: Unknown column 'absen.id' in 'where clause' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `absen` ...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `absen` ...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `absen` ...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `absen` ...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(885): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\imprtdata\app\Models\Dataabsen.php(33): CodeIgniter\Model->update('434637', Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\EventController.php(137): App\Models\Dataabsen->dataUpdate('434637', Array)
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-11-21 20:57:51 --> Unknown column 'absen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:57:51\'
+WHERE `absen`.`id` IN (\'434637\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:57:51\'
+WHERE `absen`.`id` IN (\'434637\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:57:51\'
+WHERE `absen`.`id` IN (\'434637\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `absen` SET `vote` = :vote:, `notes` = :notes:, `updated_at` = :updated_at:
+WHERE `absen`.`id` IN :absen.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(885): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\Dataabsen.php(33): CodeIgniter\Model->update('434637', [...])
+ 9 APPPATH\Controllers\EventController.php(137): App\Models\Dataabsen->dataUpdate('434637', [...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-21 20:58:52 --> mysqli_sql_exception: Unknown column 'absen.id' in 'where clause' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `absen` ...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `absen` ...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `absen` ...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `absen` ...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(885): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\imprtdata\app\Models\Dataabsen.php(33): CodeIgniter\Model->update('434637', Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\EventController.php(137): App\Models\Dataabsen->dataUpdate('434637', Array)
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-11-21 20:58:52 --> Unknown column 'absen.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:58:52\'
+WHERE `absen`.`id` IN (\'434637\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:58:52\'
+WHERE `absen`.`id` IN (\'434637\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `absen` SET `vote` = \'4\', `notes` = \'testing\', `updated_at` = \'2022-11-21 20:58:52\'
+WHERE `absen`.`id` IN (\'434637\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `absen` SET `vote` = :vote:, `notes` = :notes:, `updated_at` = :updated_at:
+WHERE `absen`.`id` IN :absen.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(885): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\Dataabsen.php(33): CodeIgniter\Model->update('434637', [...])
+ 9 APPPATH\Controllers\EventController.php(137): App\Models\Dataabsen->dataUpdate('434637', [...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:00:57 --> Undefined index: id_absen
+in APPPATH\Controllers\EventController.php on line 136.
+ 1 APPPATH\Controllers\EventController.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_absen', 'APPPATH\\Controllers\\EventController.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->voting('637')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

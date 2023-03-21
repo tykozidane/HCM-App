@@ -1,0 +1,284 @@
+ERROR - 2022-11-10 20:02:57 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:02:57 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132177636dad514ffe00.13654605\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132177636dad514ffe00.13654605\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132177636dad514ffe00.13654605\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:04:59 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:04:59 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132299636dadcb81a220.828158161\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132299636dadcb81a220.828158161\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132299636dadcb81a220.828158161\', \'221978\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:07:05 --> mysqli_sql_exception: Out of range value for column 'id' at row 1 in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:07:05 --> Out of range value for column 'id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:07:26 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:07:26 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132446636dae5ec11128.261039451\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132446636dae5ec11128.261039451\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132446636dae5ec11128.261039451\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:09:06 --> mysqli_sql_exception: Out of range value for column 'id' at row 1 in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:09:06 --> Out of range value for column 'id' at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:11:38 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:11:38 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132698636daf5adab305.53766048\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132698636daf5adab305.53766048\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'1668132698636daf5adab305.53766048\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:12:08 --> mysqli_sql_exception: Duplicate entry '636' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:12:08 --> Duplicate entry '636' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'636daf7830d59\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'636daf7830d59\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'636daf7830d59\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(526): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:13:39 --> mysqli_sql_exception: Duplicate entry '151680636' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:13:39 --> Duplicate entry '151680636' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636dafd35873c\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636dafd35873c\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636dafd35873c\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Weekly Checkpoint Meeting\', 2, \'Primary\', \'Non Project\', \'\', \'Weekly\', 2, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:23:11 --> mysqli_sql_exception: Duplicate entry '151680636' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:23:11 --> Duplicate entry '151680636' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db20f2859b\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db20f2859b\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db20f2859b\', \'151680\', \'Organization Development - Distinct Job Manual Document\', \'Drafting, Review, Revisi & Maintenance document DJM\', 2, \'Primary\', \'Non Project\', \'\', \'Daily\', 3, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:24:32 --> mysqli_sql_exception: Duplicate entry '151680636db26090' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:24:32 --> Duplicate entry '151680636db26090' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db26090924\', \'151680\', \'Organization Development - Job Evaluation\', \'Observation stage (pendampingan pihak ketiga pada pelaksanaan interview user)\', 14, \'Supportive\', \'Project\', 3, \'Weekly\', 14, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db26090924\', \'151680\', \'Organization Development - Job Evaluation\', \'Observation stage (pendampingan pihak ketiga pada pelaksanaan interview user)\', 14, \'Supportive\', \'Project\', 3, \'Weekly\', 14, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db26090924\', \'151680\', \'Organization Development - Job Evaluation\', \'Observation stage (pendampingan pihak ketiga pada pelaksanaan interview user)\', 14, \'Supportive\', \'Project\', 3, \'Weekly\', 14, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(525): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-10 20:29:13 --> mysqli_sql_exception: Duplicate entry '151680636db37965' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-10 20:29:13 --> Duplicate entry '151680636db37965' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db379659131.53328298\', \'151680\', \'Organization Development - Job Evaluation\', \'Planning & Preparation\', 1, \'Supportive\', \'Project\', 3, \'Weekly\', 1, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db379659131.53328298\', \'151680\', \'Organization Development - Job Evaluation\', \'Planning & Preparation\', 1, \'Supportive\', \'Project\', 3, \'Weekly\', 1, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (\'151680636db379659131.53328298\', \'151680\', \'Organization Development - Job Evaluation\', \'Planning & Preparation\', 1, \'Supportive\', \'Project\', 3, \'Weekly\', 1, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id`, `nik`, `activity`, `detail`, `average_time`, `cat_wla`, `type_wla`, `durasi`, `periode`, `quantity`, `keterangan`) VALUES (:id:, :nik:, :activity:, :detail:, :average_time:, :cat_wla:, :type_wla:, :durasi:, :periode:, :quantity:, :keterangan:)', [...], false)
+ 5 APPPATH\Controllers\Import.php(527): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-10 20:32:22 --> uniqid() expects at most 2 parameters, 3 given
+in APPPATH\Controllers\Import.php on line 511.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'uniqid() expects at most 2 parameters, 3 given', 'APPPATH\\Controllers\\Import.php', 511, [...])
+ 2 APPPATH\Controllers\Import.php(511): uniqid(1, '131510', true)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

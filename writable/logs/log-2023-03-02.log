@@ -1,0 +1,266 @@
+CRITICAL - 2023-03-02 18:08:56 --> Undefined index: id_event
+in APPPATH\Views\eventspage\cek_reward_page.php on line 141.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_event', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 141, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(481): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:10:48 --> Undefined index: id_event
+in APPPATH\Views\eventspage\cek_reward_page.php on line 141.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_event', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 141, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(481): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:15:08 --> Undefined index: id_event
+in APPPATH\Views\eventspage\cek_reward_page.php on line 141.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_event', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 141, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(481): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:16:24 --> Undefined index: id_event
+in APPPATH\Views\eventspage\cek_reward_page.php on line 141.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_event', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 141, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(481): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:18:17 --> Undefined index: id_event
+in APPPATH\Views\eventspage\cek_reward_page.php on line 141.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_event', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 141, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(481): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:21:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 79.
+ 1 APPPATH\Controllers\EventController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:21:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\eventspage\editeventpage.php on line 66.
+ 1 APPPATH\Views\eventspage\editeventpage.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\eventspage\\editeventpage.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\editeventpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/editeventpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(206): view('eventspage/editeventpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->editpage('js', 'demo', 'datatables-demo.js')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 18:21:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 79.
+ 1 APPPATH\Controllers\EventController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 21:01:13 --> Invalid file: eventspage/tryclaimreward.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eventspage/tryclaimreward.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/tryclaimreward', [], true)
+ 3 APPPATH\Controllers\EventController.php(517): view('eventspage/tryclaimreward')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getotpview()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 21:04:00 --> Call to undefined function App\Controllers\cekOtpNik()
+in APPPATH\Controllers\EventController.php on line 523.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-02 21:07:01 --> mysqli_sql_exception: Unknown column 'nik' in 'where clause' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataOtpReward.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Helpers\getotp_helper.php(7): App\Models\DataOtpReward->getByNik('181795')
+#8 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(523): cekOtpNik('181795')
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-02 21:07:01 --> Unknown column 'nik' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `event`
+WHERE `nik` = :nik:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\DataOtpReward.php(24): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Helpers\getotp_helper.php(7): App\Models\DataOtpReward->getByNik('181795')
+ 9 APPPATH\Controllers\EventController.php(523): cekOtpNik('181795')
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-02 21:08:16 --> mysqli_sql_exception: Unknown column 'nik' in 'where clause' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataOtpReward.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Helpers\getotp_helper.php(7): App\Models\DataOtpReward->getByNik('181795')
+#8 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(523): cekOtpNik('181795')
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-02 21:08:16 --> Unknown column 'nik' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `event`
+WHERE `nik` = \'181795\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `event`
+WHERE `nik` = :nik:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\DataOtpReward.php(24): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Helpers\getotp_helper.php(7): App\Models\DataOtpReward->getByNik('181795')
+ 9 APPPATH\Controllers\EventController.php(523): cekOtpNik('181795')
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 21:10:03 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Controllers\EventController.php on line 529.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\EventController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EventController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EventController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\EventController')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\EventController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-02 21:17:19 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ot...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ot...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ot...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ot...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataOtpReward.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(540): App\Models\DataOtpReward->insertData(Array)
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#11 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-03-02 21:17:19 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `otp_reward` (`kode_otp`, `nik`, `email`, `status`, `created_at`, `updated_at`) VALUES (\'1817951677766639\', \'181795\', \'hana.aulia@infomedia.co.id\', \'active\', \'2023-03-02 21:17:19\', \'2023-03-02 21:17:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `otp_reward` (`kode_otp`, `nik`, `email`, `status`, `created_at`, `updated_at`) VALUES (\'1817951677766639\', \'181795\', \'hana.aulia@infomedia.co.id\', \'active\', \'2023-03-02 21:17:19\', \'2023-03-02 21:17:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `otp_reward` (`kode_otp`, `nik`, `email`, `status`, `created_at`, `updated_at`) VALUES (\'1817951677766639\', \'181795\', \'hana.aulia@infomedia.co.id\', \'active\', \'2023-03-02 21:17:19\', \'2023-03-02 21:17:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `otp_reward` (`kode_otp`, `nik`, `email`, `status`, `created_at`, `updated_at`) VALUES (:kode_otp:, :nik:, :email:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataOtpReward.php(28): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\EventController.php(540): App\Models\DataOtpReward->insertData([...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 22:43:12 --> file_get_contents(../Views/eventspage/examplemail.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\EventController.php on line 566.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(../Views/eventspage/examplemail.php): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\EventController.php', 566, [...])
+ 2 APPPATH\Controllers\EventController.php(566): file_get_contents('../Views/eventspage/examplemail.php')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 22:45:16 --> file_get_contents(../Views/eventspage/examplemail.html): failed to open stream: No such file or directory
+in APPPATH\Controllers\EventController.php on line 566.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(../Views/eventspage/examplemail.html): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\EventController.php', 566, [...])
+ 2 APPPATH\Controllers\EventController.php(566): file_get_contents('../Views/eventspage/examplemail.html')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-02 22:49:10 --> fopen(../Views/eventspage/examplemail.html): failed to open stream: No such file or directory
+in APPPATH\Controllers\EventController.php on line 566.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(../Views/eventspage/examplemail.html): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\EventController.php', 566, [...])
+ 2 APPPATH\Controllers\EventController.php(566): fopen('../Views/eventspage/examplemail.html', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

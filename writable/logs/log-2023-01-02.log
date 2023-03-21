@@ -1,0 +1,255 @@
+CRITICAL - 2023-01-02 11:39:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 11:40:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 11:46:13 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 11:48:51 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 11:51:43 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 11:53:42 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 12:08:35 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 12:09:55 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 12:15:14 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 14:31:14 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-02 14:32:23 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-01-02 19:38:59 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#12 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-01-02 19:39:00 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:38:59\', \'2023-01-02 19:38:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:38:59\', \'2023-01-02 19:38:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:38:59\', \'2023-01-02 19:38:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 APPPATH\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-02 19:39:42 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#12 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-01-02 19:39:42 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 1.1862256205674, \'2023-01-02 19:39:42\', \'2023-01-02 19:39:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 1.1862256205674, \'2023-01-02 19:39:42\', \'2023-01-02 19:39:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 1.1862256205674, \'2023-01-02 19:39:42\', \'2023-01-02 19:39:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 APPPATH\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-02 19:40:44 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#12 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-01-02 19:40:44 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:40:44\', \'2023-01-02 19:40:44\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:40:44\', \'2023-01-02 19:40:44\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:40:44\', \'2023-01-02 19:40:44\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 APPPATH\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-02 19:43:46 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#12 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-01-02 19:43:46 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:43:46\', \'2023-01-02 19:43:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:43:46\', \'2023-01-02 19:43:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:43:46\', \'2023-01-02 19:43:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 APPPATH\Controllers\Import.php(748): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-02 19:44:16 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-02 19:44:16 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:44:16\', \'2023-01-02 19:44:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:44:16\', \'2023-01-02 19:44:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:44:16\', \'2023-01-02 19:44:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-02 19:48:14 --> mysqli_sql_exception: Duplicate entry '211938202211' for key 'PRIMARY' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\imprtdata\app\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData(Array)
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-01-02 19:48:14 --> Duplicate entry '211938202211' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:48:14\', \'2023-01-02 19:48:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:48:14\', \'2023-01-02 19:48:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (\'211938202211\', \'211938\', \'2022\', 0.59311281028369, \'2023-01-02 19:48:14\', \'2023-01-02 19:48:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nilai_fte` (`id`, `nik`, `tahun`, `nilai`, `created_at`, `updated_at`) VALUES (:id:, :nik:, :tahun:, :nilai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DataNilaiFte.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Import.php(584): App\Models\DataNilaiFte->insertData([...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-02 19:56:09 --> Undefined index: primary
+in APPPATH\Controllers\ExportPDF.php on line 509.
+ 1 APPPATH\Controllers\ExportPDF.php(509): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: primary', 'APPPATH\\Controllers\\ExportPDF.php', 509, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\ExportPDF->printpdf('211938')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExportPDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-02 20:23:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 44.
+ 1 APPPATH\Controllers\EventController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

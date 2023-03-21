@@ -1,0 +1,84 @@
+CRITICAL - 2022-12-18 10:03:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 44.
+ 1 APPPATH\Controllers\EventController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 15:33:22 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Config\Factories.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-18 15:34:22 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-18 15:35:22 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-18 15:42:19 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\BaseBuilder.php on line 1343.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-18 15:44:30 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\MasterEmployeeController.php on line 56.
+ 1 APPPATH\Controllers\MasterEmployeeController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\MasterEmployeeController.php', 56, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\MasterEmployeeController->getPeriode()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterEmployeeController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 20:58:58 --> Undefined property: App\Controllers\Import::$load
+in APPPATH\Controllers\Import.php on line 17.
+ 1 APPPATH\Controllers\Import.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$load', 'APPPATH\\Controllers\\Import.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 21:07:32 --> Undefined property: App\Controllers\Import::$loadHelpers
+in APPPATH\Controllers\Import.php on line 17.
+ 1 APPPATH\Controllers\Import.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$loadHelpers', 'APPPATH\\Controllers\\Import.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 21:18:36 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Import.php on line 18.
+ 1 APPPATH\Controllers\Import.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Import.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 23:05:32 --> Undefined index: nama
+in APPPATH\Views\dataemployee.php on line 97.
+ 1 APPPATH\Views\dataemployee.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama', 'APPPATH\\Views\\dataemployee.php', 97, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dataemployee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dataemployee', [], true)
+ 5 APPPATH\Controllers\Import.php(24): view('dataemployee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 23:05:45 --> Undefined index: nik
+in APPPATH\Views\dataemployee.php on line 136.
+ 1 APPPATH\Views\dataemployee.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'APPPATH\\Views\\dataemployee.php', 136, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dataemployee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dataemployee', [], true)
+ 5 APPPATH\Controllers\Import.php(24): view('dataemployee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-18 23:30:42 --> Call to a member function format() on string
+in APPPATH\Controllers\Import.php on line 563.
+ 1 APPPATH\Controllers\Import.php(721): App\Controllers\Import->datapegawai('211938')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,32 @@
+CRITICAL - 2022-11-15 13:06:25 --> Invalid file: eventspage/checkinpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eventspage/checkinpage.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/checkinpage', [], true)
+ 3 APPPATH\Controllers\EventController.php(94): view('eventspage/checkinpage', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkabsen('6371')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-15 20:22:30 --> Invalid file: eventspage/checkinpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eventspage/checkinpage.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/checkinpage', [], true)
+ 3 APPPATH\Controllers\EventController.php(94): view('eventspage/checkinpage', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkabsen('6371')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-15 21:57:26 --> Undefined index: fte
+in APPPATH\Views\detailwla.php on line 451.
+ 1 APPPATH\Views\detailwla.php(451): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: fte', 'APPPATH\\Views\\detailwla.php', 451, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(433): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211957')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

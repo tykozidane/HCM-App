@@ -1,0 +1,70 @@
+ERROR - 2022-11-20 10:25:48 --> mysqli_sql_exception: Unknown column 'id_absen' in 'field list' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wl...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wl...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wl...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wl...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\app\Controllers\EventController.php(116): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+#6 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#7 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-20 10:25:48 --> Unknown column 'id_absen' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wla` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`) VALUES (\'0004346371\', \'6371\', \'000434\', \'\', \'\', 1668961548, 1668961548)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wla` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`) VALUES (\'0004346371\', \'6371\', \'000434\', \'\', \'\', 1668961548, 1668961548)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wla` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`) VALUES (\'0004346371\', \'6371\', \'000434\', \'\', \'\', 1668961548, 1668961548)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wla` (`id_absen`, `id_event`, `nik`, `vote`, `notes`, `jam_checkin`, `last_update`) VALUES (:id_absen:, :id_event:, :nik:, :vote:, :notes:, :jam_checkin:, :last_update:)', [...], false)
+ 5 APPPATH\Controllers\EventController.php(116): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-20 10:26:13 --> The route for "dataevent6371" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dataevent6371')
+ 2 APPPATH\Controllers\EventController.php(117): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-20 10:27:42 --> date() expects at least 1 parameter, 0 given
+in APPPATH\Controllers\EventController.php on line 104.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects at least 1 parameter, 0 given', 'APPPATH\\Controllers\\EventController.php', 104, [...])
+ 2 APPPATH\Controllers\EventController.php(104): date()
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-20 10:28:37 --> The route for "dataevent/6371" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dataevent/6371')
+ 2 APPPATH\Controllers\EventController.php(118): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-20 23:34:04 --> The route for "/dataevent/6371" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/dataevent/6371')
+ 2 APPPATH\Controllers\EventController.php(119): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-20 23:34:39 --> The route for "dataevent/6371" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dataevent/6371')
+ 2 APPPATH\Controllers\EventController.php(119): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->checkin('6371')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

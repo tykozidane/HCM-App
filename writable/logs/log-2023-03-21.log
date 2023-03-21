@@ -1,0 +1,104 @@
+CRITICAL - 2023-03-21 09:14:59 --> Undefined property: CodeIgniter\Autoloader\Autoloader::$load
+in APPPATH\Controllers\EventController.php on line 23.
+ 1 APPPATH\Controllers\EventController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$load', 'APPPATH\\Controllers\\EventController.php', 23, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\EventController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\EventController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EventController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EventController')
+ 6 [internal function]: spl_autoload_call('App\\Controllers\\EventController')
+ 7 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\EventController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:15:15 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH\Controllers\EventController.php on line 818.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', 'APPPATH\\Controllers\\EventController.php', 818, [...])
+ 2 APPPATH\Controllers\EventController.php(818): hex2bin('testing')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:16:27 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH\Controllers\EventController.php on line 818.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', 'APPPATH\\Controllers\\EventController.php', 818, [...])
+ 2 APPPATH\Controllers\EventController.php(818): hex2bin('testing')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:16:44 --> hash_hkdf() expects parameter 2 to be string, array given
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hash_hkdf() expects parameter 2 to be string, array given', 'SYSTEMPATH\\Encryption\\Handlers\\OpenSSLHandler.php', 57, [...])
+ 2 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(57): hash_hkdf('SHA512', [...])
+ 3 APPPATH\Controllers\EventController.php(818): CodeIgniter\Encryption\Handlers\OpenSSLHandler->encrypt('testing', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:25:16 --> hash_hkdf() expects parameter 2 to be string, array given
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hash_hkdf() expects parameter 2 to be string, array given', 'SYSTEMPATH\\Encryption\\Handlers\\OpenSSLHandler.php', 57, [...])
+ 2 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(57): hash_hkdf('SHA512', [...])
+ 3 APPPATH\Controllers\EventController.php(821): CodeIgniter\Encryption\Handlers\OpenSSLHandler->encrypt('My secret message', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:25:18 --> hash_hkdf() expects parameter 2 to be string, array given
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hash_hkdf() expects parameter 2 to be string, array given', 'SYSTEMPATH\\Encryption\\Handlers\\OpenSSLHandler.php', 57, [...])
+ 2 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(57): hash_hkdf('SHA512', [...])
+ 3 APPPATH\Controllers\EventController.php(821): CodeIgniter\Encryption\Handlers\OpenSSLHandler->encrypt('My secret message', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:29:13 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\EventController.php(818): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:31:15 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\EventController.php(819): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:36:34 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH\Controllers\EventController.php on line 818.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', 'APPPATH\\Controllers\\EventController.php', 818, [...])
+ 2 APPPATH\Controllers\EventController.php(818): hex2bin('74657374696')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cobaenkripsi()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:41:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 90.
+ 1 APPPATH\Controllers\EventController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 11:49:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 90.
+ 1 APPPATH\Controllers\EventController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

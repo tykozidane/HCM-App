@@ -1,0 +1,124 @@
+CRITICAL - 2023-01-12 10:21:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 47.
+ 1 APPPATH\Controllers\EventController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 10:21:41 --> Undefined variable: validation
+in APPPATH\Views\eventspage\pilihanawal.php on line 88.
+ 1 APPPATH\Views\eventspage\pilihanawal.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\eventspage\\pilihanawal.php', 88, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\pilihanawal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/pilihanawal', [], true)
+ 5 APPPATH\Controllers\EventController.php(188): view('eventspage/pilihanawal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cektime('7ddc23f2af7048eecdc092befdc69a12be9ec4ebf3184e8a7d2213921f2660ff24329cb428dd9111bd05c41a0ba1aa80f5a425fd0cbabb2c90a710d2397c0fb44b08c7ac47d22b2b07187a1ed0e057bcbd6093209c1b3a5e68ee')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 10:22:03 --> Undefined variable: validation
+in APPPATH\Views\eventspage\pilihanawal.php on line 88.
+ 1 APPPATH\Views\eventspage\pilihanawal.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\eventspage\\pilihanawal.php', 88, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\pilihanawal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/pilihanawal', [], true)
+ 5 APPPATH\Controllers\EventController.php(188): view('eventspage/pilihanawal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cektime('7ddc23f2af7048eecdc092befdc69a12be9ec4ebf3184e8a7d2213921f2660ff24329cb428dd9111bd05c41a0ba1aa80f5a425fd0cbabb2c90a710d2397c0fb44b08c7ac47d22b2b07187a1ed0e057bcbd6093209c1b3a5e68ee')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 10:22:32 --> Undefined variable: validation
+in APPPATH\Views\eventspage\pilihanawal.php on line 88.
+ 1 APPPATH\Views\eventspage\pilihanawal.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\eventspage\\pilihanawal.php', 88, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\pilihanawal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/pilihanawal', [], true)
+ 5 APPPATH\Controllers\EventController.php(188): view('eventspage/pilihanawal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cektime('7ddc23f2af7048eecdc092befdc69a12be9ec4ebf3184e8a7d2213921f2660ff24329cb428dd9111bd05c41a0ba1aa80f5a425fd0cbabb2c90a710d2397c0fb44b08c7ac47d22b2b07187a1ed0e057bcbd6093209c1b3a5e68ee')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:06:37 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(41): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Controllers\DynamicController.php(40): App\Models\Datamasteremployee->getByPeriode('2022-11-01')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:09:50 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(45): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Helpers\getperiode_helper.php(14): App\Models\Datamasteremployee->getFirstByPeriode('2023-01-01')
+ 3 APPPATH\Controllers\DynamicController.php(38): getperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:11:54 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(46): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Helpers\getperiode_helper.php(14): App\Models\Datamasteremployee->getFirstByPeriode('2023-01-01')
+ 3 APPPATH\Controllers\DynamicController.php(38): getperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:12:25 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(42): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Controllers\DynamicController.php(40): App\Models\Datamasteremployee->getByPeriode('2022-11-01')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:12:52 --> Call to a member function order_by() on array
+in APPPATH\Models\Datamasteremployee.php on line 42.
+ 1 APPPATH\Controllers\DynamicController.php(40): App\Models\Datamasteremployee->getByPeriode('2022-11-01')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:14:46 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\DynamicController.php(40): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:16:05 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(42): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Controllers\DynamicController.php(40): App\Models\Datamasteremployee->getByPeriode('2022-11-01')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 11:16:11 --> Call to undefined method App\Models\Datamasteremployee::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\Datamasteremployee.php(42): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH\Controllers\DynamicController.php(40): App\Models\Datamasteremployee->getByPeriode('2022-11-01')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DynamicController->getemployee()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-12 16:26:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 48.
+ 1 APPPATH\Controllers\EventController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

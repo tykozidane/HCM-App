@@ -1,0 +1,148 @@
+CRITICAL - 2022-10-26 02:11:03 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\importpage.php on line 13.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('importpage', [], true)
+ 4 APPPATH\Controllers\Import.php(14): view('importpage')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->importform()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:34:45 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 33.
+ 1 APPPATH\Controllers\Import.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:41:32 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 33.
+ 1 APPPATH\Controllers\Import.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:41:37 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 33.
+ 1 APPPATH\Controllers\Import.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:46:26 --> Undefined variable: config
+in APPPATH\Controllers\Import.php on line 5.
+ 1 APPPATH\Controllers\Import.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: config', 'APPPATH\\Controllers\\Import.php', 5, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Import.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Import.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Import')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Import')
+ 6 [internal function]: spl_autoload_call('App\\Controllers\\Import')
+ 7 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Import', true)
+ 8 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:46:27 --> Undefined variable: config
+in APPPATH\Controllers\Import.php on line 5.
+ 1 APPPATH\Controllers\Import.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: config', 'APPPATH\\Controllers\\Import.php', 5, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Import.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Import.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Import')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Import')
+ 6 [internal function]: spl_autoload_call('App\\Controllers\\Import')
+ 7 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Import', true)
+ 8 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:46:38 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 35.
+ 1 APPPATH\Controllers\Import.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:46:49 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 35.
+ 1 APPPATH\Controllers\Import.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:47:17 --> Undefined variable: session
+in APPPATH\Controllers\Import.php on line 35.
+ 1 APPPATH\Controllers\Import.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\Import.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:47:50 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 36.
+ 1 APPPATH\Controllers\Import.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 02:48:18 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 36.
+ 1 APPPATH\Controllers\Import.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 03:00:23 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 36.
+ 1 APPPATH\Controllers\Import.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 03:43:39 --> Undefined property: App\Controllers\Import::$session
+in APPPATH\Controllers\Import.php on line 36.
+ 1 APPPATH\Controllers\Import.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Import::$session', 'APPPATH\\Controllers\\Import.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 04:00:36 --> Call to undefined method CodeIgniter\Session\Session::set_Flashdata()
+in APPPATH\Controllers\Import.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 04:06:36 --> Array to string conversion
+in APPPATH\Controllers\Import.php on line 38.
+ 1 APPPATH\Controllers\Import.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Import.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 04:07:41 --> Array to string conversion
+in APPPATH\Controllers\Import.php on line 38.
+ 1 APPPATH\Controllers\Import.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Import.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-26 04:08:52 --> Array to string conversion
+in APPPATH\Controllers\Import.php on line 38.
+ 1 APPPATH\Controllers\Import.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Import.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

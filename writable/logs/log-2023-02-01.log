@@ -1,0 +1,20 @@
+CRITICAL - 2023-02-01 10:45:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\themplatesuratpage\editthemplate.php on line 73.
+ 1 APPPATH\Views\themplatesuratpage\editthemplate.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\themplatesuratpage\\editthemplate.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\themplatesuratpage\\editthemplate.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('themplatesuratpage/editthemplate', [], true)
+ 5 APPPATH\Controllers\ThemplateController.php(76): view('themplatesuratpage/editthemplate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\ThemplateController->editthemplate('js', 'demo', 'datatables-demo.js')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ThemplateController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 15:06:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 50.
+ 1 APPPATH\Controllers\EventController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,48 @@
+CRITICAL - 2023-03-14 21:20:16 --> Undefined variable: dataClaimReward
+in APPPATH\Views\eventspage\listrewardpage.php on line 175.
+ 1 APPPATH\Views\eventspage\listrewardpage.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataClaimReward', 'APPPATH\\Views\\eventspage\\listrewardpage.php', 175, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\listrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/listrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(632): view('eventspage/listrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->listreward('94d9b345d42657a409bb52cd6d0ff2254f48c958ec88207822d1e70b47d39eb916be9538de07897225c5b01380850d84a94ff7e5f897937640b8582849145a57d042f28df9cb17e72208d3c7478f4ba24607b1be92bb80608837cf049055c38c')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 21:21:25 --> Undefined index: nama_emp
+in APPPATH\Views\eventspage\listrewardpage.php on line 184.
+ 1 APPPATH\Views\eventspage\listrewardpage.php(184): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_emp', 'APPPATH\\Views\\eventspage\\listrewardpage.php', 184, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\listrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/listrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(632): view('eventspage/listrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->listreward('94d9b345d42657a409bb52cd6d0ff2254f48c958ec88207822d1e70b47d39eb916be9538de07897225c5b01380850d84a94ff7e5f897937640b8582849145a57d042f28df9cb17e72208d3c7478f4ba24607b1be92bb80608837cf049055c38c')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 21:34:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 89.
+ 1 APPPATH\Controllers\EventController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 21:34:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 89.
+ 1 APPPATH\Controllers\EventController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-14 21:34:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 89.
+ 1 APPPATH\Controllers\EventController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

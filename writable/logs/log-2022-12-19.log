@@ -1,0 +1,152 @@
+CRITICAL - 2022-12-19 10:25:21 --> Call to a member function format() on string
+in APPPATH\Controllers\Import.php on line 563.
+ 1 APPPATH\Controllers\Import.php(721): App\Controllers\Import->datapegawai('211938')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:28:39 --> Call to a member function format() on string
+in APPPATH\Controllers\Import.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:29:08 --> Call to a member function format() on string
+in APPPATH\Controllers\Import.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:29:21 --> Call to a member function format() on string
+in APPPATH\Controllers\Import.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:31:42 --> Call to a member function format() on int
+in APPPATH\Controllers\Import.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:34:34 --> Call to a member function getYear() on string
+in APPPATH\Controllers\Import.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 10:38:00 --> mysqli_sql_exception: Unknown column 'nik' in 'where clause' in C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\imprtdata\app\Models\Datamasteremployee.php(37): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(583): App\Models\Datamasteremployee->getByNIKPeriode('211938', '2022-11-01')
+#8 C:\xampp\htdocs\imprtdata\app\Controllers\Import.php(724): App\Controllers\Import->datapegawai('211938')
+#9 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Import->upload()
+#10 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+#11 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\imprtdata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\imprtdata\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-12-19 10:38:00 --> Unknown column 'nik' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `m_emp`
+WHERE `nik` = \'211938\'
+AND `periode` = \'2022-11-01\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `m_emp`
+WHERE `nik` = \'211938\'
+AND `periode` = \'2022-11-01\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `m_emp`
+WHERE `nik` = \'211938\'
+AND `periode` = \'2022-11-01\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `m_emp`
+WHERE `nik` = :nik:
+AND `periode` = :periode:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Datamasteremployee.php(37): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Import.php(583): App\Models\Datamasteremployee->getByNIKPeriode('211938', '2022-11-01')
+ 9 APPPATH\Controllers\Import.php(724): App\Controllers\Import->datapegawai('211938')
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->upload()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:39:58 --> Undefined index: nilai
+in APPPATH\Views\dataemployee.php on line 112.
+ 1 APPPATH\Views\dataemployee.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nilai', 'APPPATH\\Views\\dataemployee.php', 112, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dataemployee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dataemployee', [], true)
+ 5 APPPATH\Controllers\Import.php(26): view('dataemployee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->employee()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:47:51 --> Undefined index: nama
+in APPPATH\Views\detailwla.php on line 59.
+ 1 APPPATH\Views\detailwla.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama', 'APPPATH\\Views\\detailwla.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(584): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:48:38 --> Undefined index: nik
+in APPPATH\Views\detailwla.php on line 80.
+ 1 APPPATH\Views\detailwla.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'APPPATH\\Views\\detailwla.php', 80, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(584): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:48:56 --> Undefined index: nama
+in APPPATH\Views\detailwla.php on line 734.
+ 1 APPPATH\Views\detailwla.php(734): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama', 'APPPATH\\Views\\detailwla.php', 734, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(584): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-19 10:49:21 --> Undefined index: nik
+in APPPATH\Views\detailwla.php on line 744.
+ 1 APPPATH\Views\detailwla.php(744): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'APPPATH\\Views\\detailwla.php', 744, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detailwla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('detailwla', [], true)
+ 5 APPPATH\Controllers\Import.php(584): view('detailwla', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Import->datapegawai('211938')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,11 @@
+CRITICAL - 2022-12-11 20:18:03 --> File not found: ../public/uploads/storage/712082022042648.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('../public/uploads/storage/712082022042648.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('../public/uploads/storage/712082022042648.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(791): CodeIgniter\HTTP\DownloadResponse->setFilePath('../public/uploads/storage/712082022042648.pdf')
+ 4 APPPATH\Controllers\StorageController.php(75): CodeIgniter\HTTP\Response->download('712082022042648.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\StorageController->download('712082022042648')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

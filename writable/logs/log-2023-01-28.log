@@ -1,0 +1,36 @@
+CRITICAL - 2023-01-28 16:17:51 --> Undefined variable: passdataabsen
+in APPPATH\Views\eventspage\cek_reward_page.php on line 123.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: passdataabsen', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 123, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(323): view('eventspage/cek_reward_page')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekreward()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-28 16:28:23 --> Undefined index: divisi
+in APPPATH\Views\eventspage\cek_reward_page.php on line 129.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: divisi', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 129, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(332): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-28 16:30:11 --> Undefined index: tanggal
+in APPPATH\Views\eventspage\cek_reward_page.php on line 132.
+ 1 APPPATH\Views\eventspage\cek_reward_page.php(132): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tanggal', 'APPPATH\\Views\\eventspage\\cek_reward_page.php', 132, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\cek_reward_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/cek_reward_page', [], true)
+ 5 APPPATH\Controllers\EventController.php(332): view('eventspage/cek_reward_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->cekrewards()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

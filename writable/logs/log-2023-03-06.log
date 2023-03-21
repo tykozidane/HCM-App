@@ -1,0 +1,279 @@
+CRITICAL - 2023-03-06 06:38:15 --> Undefined variable: countClaimReward
+in APPPATH\Views\eventspage\eventlist.php on line 57.
+ 1 APPPATH\Views\eventspage\eventlist.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: countClaimReward', 'APPPATH\\Views\\eventspage\\eventlist.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\eventlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/eventlist', [], true)
+ 5 APPPATH\Controllers\EventController.php(58): view('eventspage/eventlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 06:38:40 --> Undefined variable: countClaimReward
+in APPPATH\Views\eventspage\eventlist.php on line 57.
+ 1 APPPATH\Views\eventspage\eventlist.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: countClaimReward', 'APPPATH\\Views\\eventspage\\eventlist.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\eventlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/eventlist', [], true)
+ 5 APPPATH\Controllers\EventController.php(58): view('eventspage/eventlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 06:51:01 --> Undefined variable: reward
+in APPPATH\Views\eventspage\hcmlistrewardpage.php on line 75.
+ 1 APPPATH\Views\eventspage\hcmlistrewardpage.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: reward', 'APPPATH\\Views\\eventspage\\hcmlistrewardpage.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\hcmlistrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/hcmlistrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(642): view('eventspage/hcmlistrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 06:51:34 --> Undefined variable: datanya
+in APPPATH\Views\eventspage\hcmlistrewardpage.php on line 81.
+ 1 APPPATH\Views\eventspage\hcmlistrewardpage.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datanya', 'APPPATH\\Views\\eventspage\\hcmlistrewardpage.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\hcmlistrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/hcmlistrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(642): view('eventspage/hcmlistrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 07:07:07 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataClaimReward.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+#8 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-06 07:07:07 --> Column 'status' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `status` = \'request\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `status` = \'request\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `status` = \'request\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DataClaimReward.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 07:08:23 --> mysqli_sql_exception: Unknown column 'm_emp.ink_inf' in 'on clause' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataClaimReward.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+#8 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-06 07:08:23 --> Unknown column 'm_emp.ink_inf' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `claim_reward`
+LEFT JOIN `m_emp` ON `m_emp`.`ink_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = :claim_reward.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DataClaimReward.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 07:15:32 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`\nF...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`\nF...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`\nF...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`\nF...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataClaimReward.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+#8 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-06 07:15:32 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = :claim_reward.status:
+AND `m_emp`.`periode` = :m_emp.periode:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DataClaimReward.php(21): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 07:15:36 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`\nF...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`\nF...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`\nF...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`\nF...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataClaimReward.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+#8 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-06 07:15:36 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = \'request\'
+AND `m_emp`.`periode` = \'2023-01-01\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`
+FROM `claim_reward`
+RIGHT JOIN `m_emp` ON `m_emp`.`nik_inf` = `claim_reward`.`nik`
+WHERE `claim_reward`.`status` = :claim_reward.status:
+AND `m_emp`.`periode` = :m_emp.periode:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DataClaimReward.php(21): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\EventController.php(643): App\Models\DataClaimReward->getAllDataRequest()
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 10:09:13 --> mysqli_sql_exception: Unknown column 'm_emp.nama_emp' in 'field list' in C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `claim_r...', 0)
+#1 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `claim_r...')
+#2 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `claim_r...')
+#3 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `claim_r...', Array, false)
+#4 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\HCApp\hcm-apps\app\Models\DataClaimReward.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\HCApp\hcm-apps\app\Controllers\EventController.php(641): App\Models\DataClaimReward->getAllDataStatus()
+#8 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+#9 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\HCApp\hcm-apps\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\HCApp\hcm-apps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-06 10:09:13 --> Unknown column 'm_emp.nama_emp' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `claim_reward`.*, `m_emp`.`nama_emp`, `m_emp`.`phone_number`, `m_emp`.`email`
+FROM `claim_reward`
+WHERE `m_emp`.`periode` = \'2023-01-01\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `claim_reward`.*, `m_emp`.`nama_emp`, `m_emp`.`phone_number`, `m_emp`.`email`
+FROM `claim_reward`
+WHERE `m_emp`.`periode` = \'2023-01-01\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `claim_reward`.*, `m_emp`.`nama_emp`, `m_emp`.`phone_number`, `m_emp`.`email`
+FROM `claim_reward`
+WHERE `m_emp`.`periode` = \'2023-01-01\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `claim_reward`.*, `m_emp`.`nama_emp`, `m_emp`.`phone_number`, `m_emp`.`email`
+FROM `claim_reward`
+WHERE `m_emp`.`periode` = :m_emp.periode:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DataClaimReward.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\EventController.php(641): App\Models\DataClaimReward->getAllDataStatus()
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 10:11:04 --> Undefined variable: dataSuccessReward
+in APPPATH\Views\eventspage\hcmlistrewardpage.php on line 161.
+ 1 APPPATH\Views\eventspage\hcmlistrewardpage.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataSuccessReward', 'APPPATH\\Views\\eventspage\\hcmlistrewardpage.php', 161, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\hcmlistrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/hcmlistrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(643): view('eventspage/hcmlistrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
