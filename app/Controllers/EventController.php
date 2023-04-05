@@ -16,6 +16,7 @@ use App\Models\DataReward;
 use App\Models\DataClaimReward;
 use App\Models\DataUsers;
 use App\Models\DataUpdaterClaimReward;
+use App\Models\DataDocReward;
 use CodeIgniter\I18n\Time;
 use CodeIgniter\Debug\Toolbar\Collectors\Views;
 use Kint\Parser\TimestampPlugin;
@@ -525,7 +526,7 @@ class EventController extends BaseController
     //Fungsi View Form NIK for get OTP
     public function getotpview()
     {
-        return view('eventspage/tryclaimrewardpage');
+        return view('eventspage/newcek_reward_page');
     }
     //Fungsi Request Link Claim Reward
     public function getOtp()
@@ -617,7 +618,7 @@ class EventController extends BaseController
         }
         $nik = permissionReward($kodeotp);
         if($nik === false){
-            return view('eventspage/tryclaimrewardpage');
+            return view('eventspage/newcek_reward_page');
         } else 
         // echo $nik;
         $periode = getPeriode();
@@ -755,6 +756,46 @@ class EventController extends BaseController
         ];
         $modelupdater = new DataUpdaterClaimReward();
         $savedata = $modelupdater->insertData($dataupdater);
+        $modelreward = new DataReward();
+        $reward = $modelreward->getById($cekdataclaim['reward_id']);
+        $modelemployee = new Datamasteremployee();
+        $periode = getPeriode();
+        $dataemployee = $modelemployee->getByNIKPeriode($cekdataclaim['nik'], $periode);
+        //Sending Email
+        $path = '../public/templatedoc/invoicemail.html';
+        $homepage = file_get_contents($path);
+        $link = 'https://wa.me/6281289078298';
+        $date = date('d-m-Y');
+        $homepage = str_replace("#tanggalhariini", $date, $homepage );
+        $homepage = str_replace("#status", "verification", $homepage );
+        $homepage = str_replace("#namareward", $reward['nama'], $homepage );
+        $homepage = str_replace("#deskripsireward", $reward['deskripsi'], $homepage );
+        $homepage = str_replace("#namaemployee", $dataemployee['nama_emp'], $homepage );
+        $homepage = str_replace("#emailemployee",  $dataemployee['email'], $homepage );
+        $homepage = str_replace("#departemen",  $dataemployee['dept'], $homepage );
+        $homepage = str_replace("#phone",  $dataemployee['phone_number'], $homepage );
+        $homepage = str_replace("#linkwhatsapp",  $link, $homepage );
+    //   $stream = fopen("../Views/eventspage/examplemail.html","r");
+    //     $html = stream_get_contents($stream);
+    //     fclose($stream);
+    //   $html = file_get_contents('../Views/eventspage/examplemail.html');
+        //Email Class
+        $email = \Config\Services::email();
+
+            $email->setFrom('tyokdazi2015@gmail.com', 'HCM Infomedia');
+            $email->setTo('tykozidane2015@gmail.com'); //email tujuan 
+            // $email->setTo($dataemployee['email']); //email tujuan 
+
+            // $email->setCC('another@another-example.com');
+            // $email->setBCC('them@their-example.com');
+
+            $email->setSubject('Status Claim '.$reward['nama']);
+            $email->setMessage($homepage);
+
+            $email->send();
+
+        session()->setFlashdata('sending', 'Sending to Your Email');
+
         session()->setFlashdata('pesan', 'Reward in Verification');
         return redirect()->to('events/datareward');
         } else {
@@ -764,6 +805,24 @@ class EventController extends BaseController
     }
     public function successsendingreward($id)
     {
+        $validation = \Config\Services::validation();
+
+        $valid = $this->validate(
+            [
+                'fileupload' => [
+                    'rules' => 'uploaded[fileupload]|ext_in[fileupload,pdf]',
+                    'errors' => [
+                        'uploaded' => 'File Upload wajib diisi',
+                        'ext_in' => 'File Upload harus PDF'
+                    ]
+                ]
+            ]
+        );
+        if (!$valid){
+            session()->setFlashdata('pesan', $validation->getError('fileupload'));
+            return redirect()->to('events/datareward');
+            // echo $validation->getError('fileimport');
+        } else {
         $modelClaimReward = new DataClaimReward();
         $cekdataclaim = $modelClaimReward->getById($id);
         if($cekdataclaim != "success"){
@@ -787,11 +846,68 @@ class EventController extends BaseController
         ];
         $modelupdater = new DataUpdaterClaimReward();
         $savedata = $modelupdater->insertData($dataupdater);
+        $modelreward = new DataReward();
+        $reward = $modelreward->getById($cekdataclaim['reward_id']);
+        $modelemployee = new Datamasteremployee();
+        $periode = getPeriode();
+        $dataemployee = $modelemployee->getByNIKPeriode($cekdataclaim['nik'], $periode);
+        $files = $this->request->getFile('fileupload');
+        $ext = $files->guessExtension();
+        $nama_file = $files->getName();
+        list($day, $month, $year, $hour, $min, $sec) = explode("/", date('d/m/Y/h/i/s'));
+        $filename = $month.$day.$year.$hour.$min.$sec.$nama_file.'.'.$ext;
+        $idnya = $id.$month.$day.$year.$hour.$min.$sec;
+        $files->move('../public/uploads/document/', $filename);
+        $datadoc = [
+            'id' => $idnya,
+            'nik' => $cekdataclaim['nik'],
+            'claim_id' => $cekdataclaim['id'],
+            'reward_id' => $cekdataclaim['reward_id'],
+        ];
+        $modeldoc = new DataDocReward();
+        $modeldoc->insertData($datadoc);
+        // $path = $idnya.'.'.$ext;
+        //Sending Email
+        $file_attach = FCPATH.'/uploads/document/'.$filename;
+        $path = '../public/templatedoc/invoicemail.html';
+        $homepage = file_get_contents($path);
+        $link = 'https://wa.me/6281289078298';
+        $date = date('d-m-Y');
+        $homepage = str_replace("#tanggalhariini", $date, $homepage );
+        $homepage = str_replace("#status", "Success", $homepage );
+        $homepage = str_replace("#namareward", $reward['nama'], $homepage );
+        $homepage = str_replace("#deskripsireward", $reward['deskripsi'], $homepage );
+        $homepage = str_replace("#namaemployee", $dataemployee['nama_emp'], $homepage );
+        $homepage = str_replace("#emailemployee",  $dataemployee['email'], $homepage );
+        $homepage = str_replace("#departemen",  $dataemployee['dept'], $homepage );
+        $homepage = str_replace("#phone",  $dataemployee['phone_number'], $homepage );
+        $homepage = str_replace("#linkwhatsapp",  $link, $homepage );
+    //   $stream = fopen("../Views/eventspage/examplemail.html","r");
+    //     $html = stream_get_contents($stream);
+    //     fclose($stream);
+    //   $html = file_get_contents('../Views/eventspage/examplemail.html');
+        //Email Class
+        $email = \Config\Services::email();
+
+            $email->setFrom('tyokdazi2015@gmail.com', 'HCM Infomedia');
+            $email->setTo('tykozidane2015@gmail.com'); //email tujuan 
+            // $email->setTo($dataemployee['email']); //email tujuan 
+
+            // $email->setCC('another@another-example.com');
+            // $email->setBCC('them@their-example.com');
+
+            $email->setSubject('Status Claim '.$reward['nama']);
+            $email->setMessage($homepage);
+            $email->attach('../public/uploads/document/'.$filename);
+            $email->send();
+
+
         session()->setFlashdata('pesan', 'Reward in Verification');
         return redirect()->to('events/datareward');
         } else {
         session()->setFlashdata('pesan', 'Sudah di Success');
         return redirect()->to('events/datareward'); 
+            }
         }
     }
     public function claimthis($reward_id, $nik)

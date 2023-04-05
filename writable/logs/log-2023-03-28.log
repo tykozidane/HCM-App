@@ -1,0 +1,8 @@
+CRITICAL - 2023-03-28 13:01:42 --> Undefined index: phone
+in APPPATH\Controllers\EventController.php on line 775.
+ 1 APPPATH\Controllers\EventController.php(775): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: phone', 'APPPATH\\Controllers\\EventController.php', 775, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->sendingreward('123456181795')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

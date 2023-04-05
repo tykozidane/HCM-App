@@ -34,7 +34,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Import::index', ['filter' => 'role:user']);
+// $routes->get('/', 'Home::homepage', ['filter' => 'role:user']);
+$routes->get('/', 'Home::homepage');
 $routes->group('wla', ['filter' => 'role:hcsod, admin'], function($routes) {
     $routes->get('', 'Import::index');
     $routes->get('import', 'Import::importform');
@@ -62,7 +63,7 @@ $routes->group('events', ['filter' => 'role:user'], function($routes) {
     $routes->post('updatedatareward/(:any)', 'EventController::updatedatareward/$1');
     $routes->get('deletedatareward/(:any)', 'EventController::deletereward/$1');
     $routes->get('sendingreward/(:any)', 'EventController::sendingreward/$1');
-    $routes->get('successsendingreward/(:any)', 'EventController::successsendingreward/$1');
+    $routes->post('successsendingreward/(:any)', 'EventController::successsendingreward/$1');
 });
 $routes->group('employee', ['filter' => 'role:user'], function($routes) {
     $routes->get('listemployee', 'MasterEmployeeController::index');

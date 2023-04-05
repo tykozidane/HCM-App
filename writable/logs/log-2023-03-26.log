@@ -1,0 +1,24 @@
+ERROR - 2023-03-26 15:36:17 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 5)
+#2 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\hcm-infomedia\app\Controllers\EventController.php(603): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+#7 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#8 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hcm-infomedia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-03-26 15:36:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-26 15:36:17 --> 
+CRITICAL - 2023-03-26 15:42:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EventController.php on line 90.
+ 1 APPPATH\Controllers\EventController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EventController.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->dataevent('js', 'demo', 'datatables-demo.js')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

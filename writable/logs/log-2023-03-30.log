@@ -1,0 +1,28 @@
+CRITICAL - 2023-03-30 16:42:09 --> Undefined variable: claim
+in APPPATH\Views\eventspage\hcmlistrewardpage.php on line 414.
+ 1 APPPATH\Views\eventspage\hcmlistrewardpage.php(414): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: claim', 'APPPATH\\Views\\eventspage\\hcmlistrewardpage.php', 414, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\eventspage\\hcmlistrewardpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('eventspage/hcmlistrewardpage', [], true)
+ 5 APPPATH\Controllers\EventController.php(681): view('eventspage/hcmlistrewardpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\EventController->hcmlistreward()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-30 16:53:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 5)
+#2 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\hcm-infomedia\app\Controllers\EventController.php(604): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\EventController->getOtp()
+#7 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#8 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hcm-infomedia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hcm-infomedia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-03-30 16:53:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-30 16:53:01 --> 

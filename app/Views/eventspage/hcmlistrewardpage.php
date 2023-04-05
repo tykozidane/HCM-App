@@ -67,7 +67,7 @@
       '. $session->getFlashdata('pesan') .'</div>';
     } 
     ?>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex flex-wrap justify-content-start">
               <?php  
                     foreach ($datareward as $datanya) {
                     ?>
@@ -145,7 +145,7 @@
                       </td>
                       <td>
                         <p class="text-xs font-weight-bold mb-0"><?php foreach($datareward as $reward){
-                          if($reward['id'] == $claim['reward_id']){echo $reward['nama'];}
+                          if($reward['id'] == $claim['reward_id']){echo $reward['nama'];$namareward = $reward['nama'];}
                         } ?></p>
                       </td>
                       <td class="align-middle text-center text-sm">
@@ -168,6 +168,13 @@
                         <?php } else if ($claim['status'] == "verification") { ?>
                         <a href="<?= base_url('events/successsendingreward/').'/'.$claim['id'] ?>">
                           <button class="btn btn-success mb-0">Success</a>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successClaimModal" 
+                          data-id="<?= $claim['id'] ?>" 
+                          data-nik="<?= $claim['nik'] ?>" 
+                          data-nama="<?= $claim['nama_emp'] ?>" 
+                          data-namareward="<?= $namareward ?>">
+                                                            CLAIM
+                                                                </button>
                         <?php } else if($claim['status'] == "success") { ?>
                         <button class="btn btn-success mb-0" disabled>Done</button>
                         <?php } ?>
@@ -292,6 +299,32 @@
     </div>
   </main>
 
+    <!-- Modal Update Status Claim -->
+    <div class="modal fade" id="successClaimModal" tabindex="-1" aria-labelledby="successClaimModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5></h5>
+        <h5 class="modal-title" id="successClaimModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form method="POST" enctype="multipart/form-data">
+      <div class="modal-body">
+          <div class="mb-3">
+            <label for="doc_claim" class="col-form-label">Upload File</label>
+            <input type="file" class="form-control" id="doc_claim" name="fileupload" accept="application/pdf">
+            <div  class="form-text">Max size is 100 kb</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save Data</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -361,6 +394,25 @@
       events / deletedatareward ')?>' + '/' + id
       modalTitle.textContent = 'Delete Reward ' + nama
     })
+    var successClaimModal = document.getElementById('successClaimModal')
+successClaimModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var id = button.getAttribute('data-id')
+  var nik = button.getAttribute('data-nik')
+  var nama = button.getAttribute('data-nama')
+  var namareward = button.getAttribute('data-namareward')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = successClaimModal.querySelector('.modal-title')
+  var modalform = successClaimModal.querySelector('.modal-content form')
+
+  modalTitle.textContent = 'Verifikasi Claim atas nama ' + nama
+  modalform.action = '<?= base_url('events/successsendingreward').'/' ?>'+id
+})
   </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>

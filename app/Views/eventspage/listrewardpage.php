@@ -1,87 +1,45 @@
+<!--
+=========================================================
+* Material Kit 2 - v3.0.0
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <title>
-        HC Applications - Cek Rewards
-    </title>
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <!-- Nucleo Icons -->
-    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-    <!-- CSS Files -->
-    <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+     HC Information
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+  <!-- <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" /> -->
 </head>
 
-<body class="">
-    <div class="container position-sticky z-index-sticky top-0">
-        <div class="row">
-            <div class="col-12">
-                <!-- Navbar -->
-                <nav
-                    class="navbar navbar-expand-lg blur border-radius-lg top-0 z-index-3 shadow position-absolute mt-4 py-2 start-0 end-0 mx-4">
-                    <div class="container-fluid">
-                        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="#">
-                            HC Applications
-                        </a>
-                        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon mt-2">
-                                <span class="navbar-toggler-bar bar1"></span>
-                                <span class="navbar-toggler-bar bar2"></span>
-                                <span class="navbar-toggler-bar bar3"></span>
-                            </span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navigation">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
-                                        href="#">
-                                        <i class="fa fa-info opacity-6 text-red me-1"></i>
-                                        HC Information - Comming Soon
-                                    </a>
-                                </li>
-                                <!-- <li class="nav-item active">
-                                    <a class="nav-link me-2" href="<?= base_url('claimreward') ?>">
-                                        <i class="fa fa-check-square-o opacity-6 text-dark me-1"></i>
-                                        Cek Rewards Akhlak
-                                    </a>
-                                </li> -->
-                                <!--<li class="nav-item">
-                  <a class="nav-link me-2" href="#">
-                    <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                    Sign Up
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-2" href="#">
-                    <i class="fas fa-key opacity-6 text-dark me-1"></i>
-                    Sign In
-                  </a>
-                </li>-->
-                            </ul>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- End Navbar -->
-            </div>
-        </div>
-    </div>
-    <main class="main-content  mt-0">
-        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
-            style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-cover.jpg'); background-position: top;">
-            <span class="mask bg-gradient-dark opacity-6"></span>
-            <div class="container">
+<body class="sign-in-basic">
+<?= $this->include('layouts/navbaremployee') ?>
+  <div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="container mt-auto">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
                         <h1 class="text-white mb-2 mt-5"><?= $dataemployee['nama_emp'] ?> -
@@ -123,8 +81,12 @@
                                             <p class="card-text" style="font-weight: bold;"> Price
                                                 <?= $reward['price'] ?> Poin</p>
                                             <?php if($poin >= $reward['price'] && $done === false){ ?>
-                                            <a href="<?= base_url('claimthis').'/'.$reward['id'].'/'.$dataemployee['nik_inf'] ?>"
-                                                class="btn btn-success">Claim</a>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimModal" data-id="<?= $reward['id'] ?>" data-nik="<?= $dataemployee['nik_inf'] ?>" data-nama="<?= $dataemployee['nama_emp'] ?>" data-namareward="<?= $reward['nama'] ?>">
+                                                            CLAIM
+                                                                </button>
+                                            <!-- <a href="<?= base_url('claimthis').'/'.$reward['id'].'/'.$dataemployee['nik_inf'] ?>"
+                                                class="btn btn-success">Claim</a> -->
                                             <?php } else if($poin < $reward['price'] && $done === false) { ?>
                                             <button class="btn btn-secondary" style="margin-bottom: 0.5em;"
                                                 disabled>Claim</button>
@@ -234,27 +196,101 @@
                 </div>
 
             </div>
+    <footer class="footer position-absolute bottom-2 py-2 w-100">
+      <div class="container mt-auto">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-12 col-md-6 my-auto">
+            <div class="copyright text-center text-sm text-white text-lg-start">
+              © <script>
+                document.write(new Date().getFullYear())
+              </script>,
+              made with </i> by
+              <a href="#" class="font-weight-bold text-white" target="_blank">Human Capital Strategy & Organizational Development</a>
+             
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+             
+            </ul>
+          </div>
         </div>
-
-    </main>
-    <!--   Core JS Files   -->
-    <script src="../assets/js/core/popper.min.js"></script>
-    <script src="../assets/js/core/bootstrap.min.js"></script>
-    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-    <script>
-        var win = navigator.platform.indexOf('Win') > -1;
-        if (win && document.querySelector('#sidenav-scrollbar')) {
-            var options = {
-                damping: '0.5'
-            }
-            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+      </div>
+    </footer>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="claimModal" tabindex="-1" aria-labelledby="claimModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="claimModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="<?= base_url('claimthis').'/'.$reward['id'].'/'.$dataemployee['nik_inf'] ?>"
+                                                class="btn btn-success">Claim</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="../assets/js/plugins/parallax.min.js"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="../assets/js/material-kit.min.js?v=3.0.0" type="text/javascript"></script>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
         }
-    </script>
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+      }
+    }
+  </script>
+  <script>
+    var claimModal = document.getElementById('claimModal')
+claimModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var id = button.getAttribute('data-id')
+  var nik = button.getAttribute('data-nik')
+  var nama = button.getAttribute('data-nama')
+  var namareward = button.getAttribute('data-namareward')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = claimModal.querySelector('.modal-title')
+  var modalBodyInput = claimModal.querySelector('.modal-footer a')
+  var modaldeskripsi = claimModal.querySelector('.modal-body p')
+
+  modalTitle.textContent = 'Claim Reward atas nama ' + nama
+  modalBodyInput.href = '<?= base_url('claimthis') ?>'+'/'+ id + '/' + nik
+  modaldeskripsi.textContent = namareward
+})
+  </script>
 </body>
 
 </html>
+

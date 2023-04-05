@@ -15,4 +15,8 @@ class Home extends BaseController
             return redirect()->route('storage');
         }
     }
+    public function homepage()
+    {
+        return view('newhompage');
+    }
 }
